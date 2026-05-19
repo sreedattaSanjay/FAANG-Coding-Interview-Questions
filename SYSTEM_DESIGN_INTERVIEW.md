@@ -1,23 +1,8 @@
-# 🚀 FAANG System Design Interview Guide 🚀
+# FAANG System Design Interview Guide
 
 ## 25 Must-Do System Design Problems for Tech Interviews
 
-<div align="center">
-  <a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions">
-    <img src="https://img.shields.io/badge/🏗️%20System%20Design%20Guide-000000?style=for-the-badge" alt="System Design Guide" />
-  </a>
-  
-  <p><em>A curated collection of system design problems frequently asked in interviews at top tech companies</em></p>
-  
-  <p>
-    <a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions/stargazers">
-      <img src="https://img.shields.io/badge/⭐%20STAR%20THIS%20REPO-yellow?style=for-the-badge" alt="Star This Repo" />
-    </a>
-    <a href="https://github.com/ombharatiya?tab=followers">
-      <img src="https://img.shields.io/badge/👨‍💻%20FOLLOW%20@OMBHARATIYA-39D353?style=for-the-badge" alt="Follow @ombharatiya" />
-    </a>
-  </p>
-</div>
+A curated collection of system design problems frequently asked in interviews at top tech companies.
 
 ## Table of System Design Interview Problems
 
@@ -51,9 +36,9 @@ This table presents 25 essential system design problems that are frequently aske
 | 24 | Design a Real-time Collaboration Editor (like Google Docs) | High | Google, Microsoft, Notion, Coda | SWE, Frontend, Real-time | [Google Research](https://research.google/pubs/pub44830/), [System Design Interview Vol 2](https://www.amazon.com/System-Design-Interview-Insiders-Guide/dp/1736049119) |
 | 25 | Design a Stock Trading System | High | Robinhood, Intuit, Citadel, JPMorgan | SWE, Financial, Real-time | [Robinhood Engineering Blog](https://robinhood.engineering/), [System Design Interview Vol 1](https://www.amazon.com/System-Design-Interview-insiders-Second/dp/B08CMF2CQF) |
 
-## Latest System Design Questions for 2025
+## Latest System Design Questions for 2025-2026
 
-The system design landscape is rapidly evolving with new technologies and architectural patterns. Here are the most recent system design problems being asked in 2025 interviews at top tech companies:
+The system design landscape is rapidly evolving with new technologies and architectural patterns. Here are the most recent system design problems being asked in 2025-2026 interviews at top tech companies:
 
 | # | Problem | Complexity | Companies | Roles | Key Considerations |
 |---|---------|------------|-----------|-------|-------------------|
@@ -68,9 +53,26 @@ The system design landscape is rapidly evolving with new technologies and archit
 | 9 | Design a Low-latency Global ML Inference System | High | OpenAI, Google, Anthropic, Meta | ML Infra, Cloud | Load balancing, model serving, region optimization, model quantization |
 | 10 | Design a Quantum Computing Interface | Very High | IBM, Google, Microsoft, Amazon | Quantum, Cloud | Quantum-classical integration, error correction, abstraction layers |
 
-### Emerging System Design Trends in 2025
+### AI-Native System Design Questions (New in 2026)
 
-Several key trends are shaping system design interviews in 2025:
+These questions reflect the shift toward AI-native architectures in 2026 interviews:
+
+| # | Problem | Complexity | Companies | Key Considerations |
+|---|---------|------------|-----------|-------------------|
+| 1 | Design a Hallucination-Free Banking Chatbot | High | Stripe, JPMorgan, Google | Domain-constrained generation, citation verification, regulatory compliance |
+| 2 | Design a Perplexity.ai / LLM-Powered Search Engine | Very High | Google, OpenAI, Anthropic | RAG + live web crawling, citation generation, streaming responses |
+| 3 | Design an AI Co-pilot like GitHub Copilot | High | Microsoft, Google, JetBrains | Context management across files, latency-sensitive completion, model routing |
+| 4 | Design an Image Generation Service (Midjourney/DALL-E) | High | OpenAI, Google, Meta | Queue management, GPU scheduling, content safety filtering at scale |
+| 5 | Design a Feature Store for ML Models | High | Netflix, Uber, Airbnb | Batch vs real-time features, training-serving skew, feature versioning |
+| 6 | Design Real-Time Fraud Detection System | High | Stripe, PayPal, Amazon | 50ms latency at 50K TPS, continuous model updates, feature engineering |
+| 7 | Design ML Model Monitoring in Production | Medium | All | Drift detection (data, concept, prediction), automated alerting, degradation response |
+| 8 | Design an Autonomous AI Travel Booking Agent | High | OpenAI, Anthropic, Google | Orchestrator + tool gateway, credential management, rollback, risk-classified actions |
+| 9 | Design a Hospital Voice Assistant | Very High | Google, Amazon, Apple | Multimodal (STT + LLM + TTS), HIPAA compliance, medical-context latency |
+| 10 | Design a Conversational Recommender System | High | Netflix, Amazon, TikTok | Dialogue state tracking + recommendation engines |
+
+### Emerging System Design Trends in 2025-2026
+
+Several key trends are shaping system design interviews in 2025-2026:
 
 1. **AI Integration at Scale**
    - Systems now commonly incorporate AI/ML components
@@ -78,11 +80,12 @@ Several key trends are shaping system design interviews in 2025:
    - Managing prompt engineering and context at scale
    - Robust handling of AI hallucinations and errors
 
-2. **Multi-Agent Architectures**
-   - Systems with multiple specialized AI agents working together
-   - Orchestration and coordination mechanisms
-   - Conflict resolution between agents
-   - Safety guarantees and monitoring
+2. **Multi-Agent and Agentic Architectures (Major 2026 Shift)**
+   - Now a distinct interview category at senior/staff levels (Gartner: 60%+ enterprise AI apps will include agentic components by 2026)
+   - Key components: orchestrator (observe-think-act loop), tool gateway with OpenAPI schemas, memory systems (working/episodic/semantic/procedural), policy/guardrails engine
+   - Action risk classification: read-only, reversible-write, irreversible-write, external-communication
+   - Tool gateway architecture: standardized schemas, credential management via secrets managers, sandboxed execution, distributed tracing
+   - Model Context Protocol (MCP): Anthropic's open standard (Linux Foundation, co-founded with OpenAI and Block) for LLM-to-tool connections
 
 3. **Edge-Cloud Hybrid Systems**
    - Processing sensitive data at the edge
@@ -407,4 +410,27 @@ By focusing on these patterns and topics, you'll be well-prepared for coding int
 
 ---
 
-_Last updated: March 2025_ 
+<div align="center">
+
+### 🔔 You Found the Shortcut. Don't Lose It.
+
+New questions, papers, and strategies drop here **every single week** — before they surface anywhere else.
+
+The engineers who land FAANG offers aren't the ones who *find* a resource — they're the ones who **never lose it**.
+
+⚡ **One click. Every update. Zero effort.**
+
+<a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions/subscription">
+  <img src="https://img.shields.io/badge/🔔 Watch This Repo-Get Every Update-blue?style=for-the-badge" alt="Watch Repo" />
+</a>&nbsp;
+<a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions">
+  <img src="https://img.shields.io/badge/⭐ Star-Show Support-yellow?style=for-the-badge" alt="Star Repo" />
+</a>
+
+**Follow [@ombharatiya](https://github.com/ombharatiya)** for exclusive tips, paper breakdowns, and career moves that never make it into the repo:
+
+[![GitHub](https://img.shields.io/badge/GitHub-@ombharatiya-181717?style=flat-square&logo=github)](https://github.com/ombharatiya)
+[![Twitter](https://img.shields.io/badge/Twitter-@ombharatiya-1DA1F2?style=flat-square&logo=twitter)](https://twitter.com/ombharatiya)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-ombharatiya-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/ombharatiya)
+
+</div>
